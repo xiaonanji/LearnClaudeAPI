@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon training with a 20km long run scheduled for afternoon",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus pre/post-workout nutrition",
+      "High carbohydrate content (55-65% of calories) appropriate for endurance training",
+      "Timing aligns meals and snacks around the afternoon long run (pre-run fuel, post-run recovery)",
+      "Plan is compact and presented in 1-day format without excessive detail"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around long training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "90",
+      "goal": "Build muscle mass and increase strength through weight training",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers exactly 1 day with 4-5 meals",
+      "Distributes at least 150g protein evenly across meals (30g+ per meal)",
+      "Total daily calories support muscle building (approximately 3000-3500 kcal)",
+      "Includes calorie-dense, nutrient-rich foods suitable for strength athletes"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing high protein distribution across meals and caloric density for muscle building"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "75",
+      "goal": "Cut weight to 71kg for competition in 5 days while maintaining strength and power for boxing training",
+      "restrictions": "No dairy due to lactose intolerance"
+    },
+    "solution_criteria": [
+      "Meal plan totals approximately 2000-2200 calories to support gradual weight loss without performance degradation",
+      "Includes high-protein foods (minimum 150g daily) to preserve muscle mass during caloric deficit",
+      "All meals are dairy-free and suitable for an athlete in weight-restricted sport",
+      "Plan is formatted as a single day (breakfast, lunch, dinner, snacks) and is compact and concise"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport requiring weight management (boxer or wrestler) with caloric restrictions while maintaining performance and recovery nutrition"
+  }
+]
