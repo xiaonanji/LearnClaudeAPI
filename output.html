@@ -117,7 +117,7 @@
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">7.7 / 10</div>
+                    <div class="stat-value">8.7 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
@@ -140,316 +140,99 @@
             <tbody>
     
             <tr>
-                <td>Testing with an endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around long training sessions</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Marathon training with a 20km long run scheduled for afternoon<br><strong>restrictions:</strong> None</td>
-                <td class="criteria">• Meal plan covers all three meals plus pre/post-workout nutrition<br>• High carbohydrate content (55-65% of calories) appropriate for endurance training<br>• Timing aligns meals and snacks around the afternoon long run (pre-run fuel, post-run recovery)<br>• Plan is compact and presented in 1-day format without excessive detail</td>
-                <td class="output"><pre># One-Day Marathon Training Meal Plan
-**Athlete Profile:** 72 kg male, 180 cm, marathon training with 20km run
-
----
-
-## Daily Calorie & Macronutrient Target
-- **Total Calories:** 3,200 kcal
-- **Protein:** 144g (18%)
-- **Carbohydrates:** 448g (56%)
-- **Fat:** 107g (30%)
-
-*Rationale: High carbs fuel long-distance running; adequate protein supports recovery*
-
----
-
-## MEAL PLAN
-
-### **BREAKFAST (6:00 AM)** – 650 kcal
-*Pre-run fueling*
-- Oatmeal: 80g dry → 280 kcal | 10g protein | 54g carbs | 5g fat
-- Banana: 150g → 135 kcal | 1.3g protein | 34g carbs | 0.3g fat
-- Almond butter: 20g → 190 kcal | 7g protein | 7g carbs | 17g fat
-- Honey: 15g → 45 kcal | 0g protein | 12g carbs | 0g fat
-
-**Subtotal:** 650 kcal | 18.3g protein | 107g carbs | 22.3g fat
-
----
-
-### **PRE-RUN SNACK (11:30 AM)** – 300 kcal
-*1.5 hours before 20km run*
-- Energy bar (sports): 65g → 250 kcal | 8g protein | 46g carbs | 5g fat
-- Dates: 40g → 107 kcal | 0.9g protein | 28g carbs | 0.1g fat
-- Water: 500ml
-
-**Subtotal:** 357 kcal | 8.9g protein | 74g carbs | 5.1g fat
-
----
-
-### **LUNCH (1:00 PM) – During/Post-Run**
-*Consume during run (20km takes ~2 hours)*
-- Sports drink: 750ml → 294 kcal | 0g protein | 73.5g carbs | 0g fat
-- Rice cakes with jam: 2 cakes (40g) + jam (20g) → 200 kcal | 2g protein | 48g carbs | 1g fat
-
-**Subtotal (During Run):** 494 kcal | 2g protein | 121.5g carbs | 1g fat
-
----
-
-### **POST-RUN RECOVERY MEAL (3:30 PM)** – 650 kcal
-*Within 30 minutes of finishing*
-- Grilled chicken breast: 200g → 330 kcal | 62g protein | 0g carbs | 7g fat
-- White rice: 150g cooked → 195 kcal | 4.5g protein | 43g carbs | 0.3g fat
-- Carrots (steamed): 100g → 41 kcal | 0.9g protein | 10g carbs | 0.2g fat
-- Olive oil: 10ml → 90 kcal | 0g protein | 0g carbs | 10g fat
-
-**Subtotal:** 656 kcal | 67.4g protein | 53g carbs | 17.5g fat
-
----
-
-### **DINNER (7:00 PM)** – 750 kcal
-*Evening recovery meal*
-- Salmon fillet: 180g → 360 kcal | 40g protein | 0g carbs | 21g fat
-- Sweet potato (baked): 200g → 180 kcal | 4g protein | 41g carbs | 0.2g fat
-- Broccoli (steamed): 150g → 51 kcal | 5g protein | 9.5g carbs | 0.6g fat
-- Brown rice: 60g cooked → 75 kcal | 1.8g protein | 16g carbs</pre></td>
-                <td class="score-col"><span class="score score-medium">7</span></td>
-                <td class="reasoning">The solution successfully addresses all mandatory requirements with precise daily caloric targets, detailed macronutrient percentages, and specific meals with portions and timing. The carbohydrate percentage (56%) and meal timing around the afternoon long run demonstrate strong alignment with secondary criteria for endurance training. However, the incomplete dinner entry and resulting caloric discrepancy represent a material flaw that undermines confidence in the plan's accuracy. The solution is otherwise well-structured and appropriately concise, but the incomplete data prevents a higher score.</td>
+                <td>Testing with an interdisciplinary passage mixing multiple fields (e.g., economics, psychology, and technology) to verify the prompt handles diverse topic categories and cross-domain concepts without duplication or confusion</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent studies demonstrate how behavioral economics intersects with digital platform design to influence consumer decision-making. Psychological research on cognitive biases reveals that users exhibit loss aversion when presented with algorithmic recommendations, leading to measurable changes in purchasing behavior. Simultaneously, technology firms leverage machine learning to predict these psychological patterns, creating feedback loops that amplify engagement metrics. Economic analysis shows that this data-driven personalization generates significant revenue streams while raising questions about market efficiency and consumer autonomy. The integration of neuroscientific findings about dopamine responses with UI/UX engineering has fundamentally altered how digital ecosystems shape financial transactions and information consumption patterns.</td>
+                <td class="criteria">• Extracts topics from multiple disciplines (economics, psychology, technology) without duplication<br>• Identifies both primary topics and cross-domain concepts that bridge fields<br>• Returns results as a JSON array of strings<br>• Avoids conflating related but distinct topics (e.g., 'behavioral economics' vs 'cognitive biases' vs 'machine learning')</td>
+                <td class="output"><pre>```json
+[
+  "behavioral economics",
+  "digital platform design",
+  "consumer decision-making",
+  "cognitive biases",
+  "loss aversion",
+  "algorithmic recommendations",
+  "purchasing behavior",
+  "machine learning",
+  "psychological patterns",
+  "feedback loops",
+  "engagement metrics",
+  "data-driven personalization",
+  "revenue streams",
+  "market efficiency",
+  "consumer autonomy",
+  "neuroscientific findings",
+  "dopamine responses",
+  "UI/UX engineering",
+  "digital ecosystems",
+  "financial transactions",
+  "information consumption patterns"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array containing only strings with topics, no extra commentary, and nothing else in the response. It meets the secondary criteria by extracting topics from multiple disciplines without duplication and avoiding most conflations. The distinction between related concepts like 'behavioral economics,' 'cognitive biases,' and 'machine learning' is properly maintained. While there is minor room for debate about whether some closely-related terms should be consolidated, the extraction is defensible and comprehensive. The solution demonstrates strong understanding of the task requirements.</td>
             </tr>
         
             <tr>
-                <td>Testing with a strength/power athlete (weightlifter) needing high protein distribution across meals and caloric density for muscle building</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 90<br><strong>goal:</strong> Build muscle mass and increase strength through weight training<br><strong>restrictions:</strong> None</td>
-                <td class="criteria">• Meal plan covers exactly 1 day with 4-5 meals<br>• Distributes at least 150g protein evenly across meals (30g+ per meal)<br>• Total daily calories support muscle building (approximately 3000-3500 kcal)<br>• Includes calorie-dense, nutrient-rich foods suitable for strength athletes</td>
-                <td class="output"><pre># One-Day Muscle Building Meal Plan
-
-**Athlete Profile:** 180cm, 90kg male | Goal: Muscle mass & strength gain
-
----
-
-## Daily Nutrition Targets
-- **Calories: 3,200 kcal**
-- **Protein: 180g** (2.0g per kg bodyweight)
-- **Carbohydrates: 400g** (4.4g per kg bodyweight)
-- **Fat: 85g** (0.9g per kg bodyweight)
-
----
-
-## MEAL PLAN
-
-### **BREAKFAST** (7:00 AM)
-*Pre-workout meal*
-
-- Oatmeal: 100g dry
-- Banana: 150g (1 medium)
-- Whole eggs: 3 large
-- Honey: 20g
-
-**Macros:** 650 kcal | 22g protein | 95g carbs | 18g fat
-
----
-
-### **MID-MORNING SNACK** (10:00 AM)
-*Post-workout recovery*
-
-- Greek yogurt (plain): 250g
-- Granola: 40g
-- Mixed berries: 100g
-- Almonds: 25g
-
-**Macros:** 420 kcal | 25g protein | 42g carbs | 15g fat
-
----
-
-### **LUNCH** (1:00 PM)
-
-- Chicken breast (cooked): 200g
-- Brown rice (cooked): 200g
-- Broccoli: 150g
-- Olive oil: 10ml
-
-**Macros:** 720 kcal | 52g protein | 78g carbs | 16g fat
-
----
-
-### **PRE-WORKOUT SNACK** (3:30 PM)
-
-- Peanut butter: 30g
-- White bread: 50g
-- Apple: 180g
-
-**Macros:** 380 kcal | 12g protein | 48g carbs | 16g fat
-
----
-
-### **DINNER** (7:00 PM)
-
-- Lean ground beef (90/10): 200g
-- Sweet potato (cooked): 250g
-- Spinach salad: 100g
-- Olive oil dressing: 10ml
-
-**Macros:** 620 kcal | 55g protein | 65g carbs | 15g fat
-
----
-
-### **EVENING SNACK** (9:30 PM)
-*Before bed*
-
-- Cottage cheese (2%): 200g
-- Almonds: 20g
-
-**Macros:** 230 kcal | 14g protein | 12g carbs | 9g fat
-
----
-
-## **DAILY TOTALS**
-| Nutrient | Target | Actual |
-|----------|--------|--------|
-| **Calories** | 3,200 | 3,220 |
-| **Protein** | 180g | 180g |
-| **Carbs** | 400g | 400g |
-| **Fat** | 85g | 84g |
-
----
-
-## **Hydration Recommendations**
-- **Water:** 3-4 liters throughout the day
-- **During workouts:** 500ml per 30 minutes of training
-- Post-workout: 500ml electrolyte drink (optional)
-
----
-
-## **Timing Notes**
-✓ Eat breakfast 1-2 hours before weight training  
-✓ Post-workout meal within 30-60 minutes  
-✓ Space meals 3-4 hours apart  
-✓ Adjust portions if training intensity varies</pre></td>
+                <td>Testing with a humanities passage containing abstract concepts and theoretical frameworks to verify the prompt extracts philosophical and methodological topics accurately</td>
+                <td class="prompt-inputs"><strong>content:</strong> Hermeneutic phenomenology, as developed through the interpretive tradition, fundamentally reconceptualizes the relationship between subject and object by rejecting Cartesian dualism in favor of an ontological framework grounded in Being-in-the-world. Gadamer's fusion of horizons represents a methodological approach that acknowledges the historicity of understanding, wherein the interpreter's prejudgments and the text's meaning enter into a dialogical encounter. This theoretical stance diverges significantly from positivist epistemology, which privileges objective observation and quantifiable data, instead emphasizing the constitutive role of interpretation in generating knowledge. Furthermore, the hermeneutic circle—the iterative movement between part and whole—serves as both an analytical tool and a philosophical principle that challenges linear models of comprehension and demands reflexivity regarding the researcher's own situatedness within the interpretive process.</td>
+                <td class="criteria">• Extracts key philosophical frameworks and theoretical concepts (e.g., hermeneutic phenomenology, Being-in-the-world, fusion of horizons, hermeneutic circle)<br>• Identifies methodological approaches and epistemological positions (e.g., Cartesian dualism, positivist epistemology, reflexivity)<br>• Returns output as a valid JSON array of strings with no duplicate entries<br>• Captures abstract concepts and theoretical distinctions relevant to humanities scholarship</td>
+                <td class="output"><pre>```json
+[
+  "Hermeneutic phenomenology",
+  "Interpretive tradition",
+  "Cartesian dualism",
+  "Ontological framework",
+  "Being-in-the-world",
+  "Gadamer's fusion of horizons",
+  "Historicity of understanding",
+  "Prejudgments",
+  "Dialogical encounter",
+  "Positivist epistemology",
+  "Objective observation",
+  "Quantifiable data",
+  "Interpretation and knowledge generation",
+  "Hermeneutic circle",
+  "Part and whole relationship",
+  "Linear models of comprehension",
+  "Reflexivity",
+  "Researcher situatedness"
+]
+```</pre></td>
                 <td class="score-col"><span class="score score-high">8</span></td>
-                <td class="reasoning">The solution comprehensively satisfies all three mandatory requirements with precise daily totals, detailed macronutrient breakdowns, and specific meals with portions and timing. It meets all secondary criteria: covers one full day, distributes protein well above the 150g minimum with even distribution across meals, targets appropriate caloric intake for muscle building, and includes nutrient-dense foods suitable for strength athletes. The primary deficiency is providing 6 meals when the criteria specify 4-5 meals, which contradicts the 'compact, concise' nature requested in the original task. However, this is a secondary criterion violation rather than a mandatory requirement violation. The nutritional science is sound and the plan is practical and well-organized.</td>
+                <td class="reasoning">The solution meets all mandatory requirements: it provides a valid JSON array of strings with no duplicates, contains only topic names without commentary, and returns only the JSON array. It successfully captures the primary philosophical frameworks and theoretical concepts central to the passage. However, there are minor deficiencies in secondary criteria regarding topic granularity and conceptual precision. Some extracted items ('Objective observation', 'Quantifiable data') are illustrative examples rather than core topics, and the combination of 'Interpretation and knowledge generation' conflates distinct ideas. Despite these minor issues, the solution demonstrates strong understanding of the passage's key concepts and maintains appropriate scope for a scholarly article topic extraction.</td>
             </tr>
         
             <tr>
-                <td>Testing with a sport requiring weight management (boxer or wrestler) with caloric restrictions while maintaining performance and recovery nutrition</td>
-                <td class="prompt-inputs"><strong>height:</strong> 178<br><strong>weight:</strong> 75<br><strong>goal:</strong> Cut weight to 71kg for competition in 5 days while maintaining strength and power for boxing training<br><strong>restrictions:</strong> No dairy due to lactose intolerance</td>
-                <td class="criteria">• Meal plan totals approximately 2000-2200 calories to support gradual weight loss without performance degradation<br>• Includes high-protein foods (minimum 150g daily) to preserve muscle mass during caloric deficit<br>• All meals are dairy-free and suitable for an athlete in weight-restricted sport<br>• Plan is formatted as a single day (breakfast, lunch, dinner, snacks) and is compact and concise</td>
-                <td class="output"><pre># One-Day Meal Plan for Boxing Athlete
-**Goal: Weight Cut (75kg → 71kg in 5 days) | Dairy-Free**
-
----
-
-## DAILY TARGETS
-- **Calories:** 2,200 kcal (moderate deficit for strength maintenance)
-- **Protein:** 165g (2.2g/kg body weight)
-- **Carbs:** 220g (fuel for training intensity)
-- **Fat:** 55g (essential hormonal function)
-- **Sodium:** Controlled for water management
-
----
-
-## MEAL SCHEDULE
-
-### **BREAKFAST | 7:00 AM** (500 kcal)
-*Pre-training fuel*
-- Oatmeal (dry): 60g
-- Banana: 150g
-- Almond butter: 20g
-- Water or plant-based milk (oat/almond): 240ml
-- Honey: 10g
-
-| Macro | Amount |
-|-------|--------|
-| Protein | 12g |
-| Carbs | 72g |
-| Fat | 11g |
-
----
-
-### **PRE-TRAINING SNACK | 9:30 AM** (150 kcal)
-*1 hour before boxing session*
-- Rice cakes: 30g (2 cakes)
-- Honey: 15g
-
-| Macro | Amount |
-|-------|--------|
-| Protein | 2g |
-| Carbs | 37g |
-| Fat | 0.5g |
-
----
-
-### **LUNCH | 1:00 PM** (550 kcal)
-*Post-training recovery*
-- Grilled chicken breast: 200g
-- White rice (cooked): 200g
-- Mixed vegetables (broccoli, carrots): 150g
-- Olive oil: 10ml
-- Sea salt: 2g
-- Black pepper: 1g
-
-| Macro | Amount |
-|-------|--------|
-| Protein | 48g |
-| Carbs | 55g |
-| Fat | 12g |
-
----
-
-### **AFTERNOON SNACK | 4:00 PM** (250 kcal)
-*Energy/protein boost*
-- Grilled lean beef (93/7): 150g
-- Sweet potato (baked): 180g
-- Black pepper: 1g
-
-| Macro | Amount |
-|-------|--------|
-| Protein | 32g |
-| Carbs | 28g |
-| Fat | 6g |
-
----
-
-### **DINNER | 7:00 PM** (600 kcal)
-*Evening recovery*
-- Baked salmon fillet: 180g
-- Quinoa (cooked): 150g
-- Asparagus (steamed): 120g
-- Lemon juice: 15ml
-- Olive oil: 8ml
-- Garlic (fresh): 5g
-
-| Macro | Amount |
-|-------|--------|
-| Protein | 40g |
-| Carbs | 36g |
-| Fat | 18g |
-
----
-
-### **EVENING OPTION | 9:30 PM** (150 kcal - if needed)
-*Sleep support*
-- Rice protein shake: 30g powder
-- Plant-based milk: 240ml
-- Banana: 100g
-
-| Macro | Amount |
-|-------|--------|
-| Protein | 31g |
-| Carbs | 22g |
-| Fat | 1g |
-
----
-
-## DAILY TOTALS (Without Evening Option)
-| Macro | Amount | Target |
-|-------|--------|--------|
-| **Calories** | 2,050 | 2,200 ✓ |
-| **Protein** | 164g | 165g ✓ |
-| **Carbs** | 228g | 220g ✓ |
-| **Fat** | 48g | 55g ✓ |
-
----
-
-## HYDRATION PROTOCOL
-- **7:00 AM:** 500ml water
-- **9:30 AM:** 400ml water
-- **1:00 PM:** 600ml water + electrolyte drink (coconut water 200</pre></td>
-                <td class="score-col"><span class="score score-high">8</span></td>
-                <td class="reasoning">The solution successfully meets all mandatory requirements: it includes daily caloric total (2,050 kcal, within 2,000-2,200 range), complete macronutrient breakdown (164g protein exceeds 150g minimum), and detailed meals with exact portions and timing throughout the day. All meals are dairy-free and appropriate for a boxing athlete in a weight-cut phase. The plan is compact and well-formatted as a single day. The primary weakness is the incomplete hydration protocol section that cuts off mid-sentence, which is a formatting/completeness issue rather than a content deficiency. The macronutrient targets are met or nearly met (carbs slightly over, fat slightly under, but both within acceptable margins). The meal timing and composition are strategically sound for training and recovery.</td>
+                <td>Testing with a scientific abstract rich in domain-specific terminology and numerical data to ensure technical topics, measurements, and experimental variables are properly identified</td>
+                <td class="prompt-inputs"><strong>content:</strong> We investigated the efficacy of CRISPR-Cas9 gene editing in primary human hepatocytes using a dose-response protocol with concentrations ranging from 0.5 to 50 μM. The off-target mutation rate was quantified through whole-genome sequencing at 72, 144, and 216 hours post-transfection. Results demonstrated a 94.3% on-target editing efficiency at 10 μM with minimal off-target effects (<0.02%). Notably, cell viability decreased to 68% at 50 μM, suggesting dose-dependent cytotoxicity. We employed chromatin immunoprecipitation (ChIP) to assess histone acetylation patterns and identified significant upregulation of H3K27ac marks associated with the target locus. Additionally, RNA-sequencing revealed 312 differentially expressed genes (DEGs) with log2 fold-change >1.5 and adjusted p-value <0.05, predominantly involved in hepatic metabolic pathways and apoptosis regulation.</td>
+                <td class="criteria">• Captures all major experimental techniques and methodologies (CRISPR-Cas9, whole-genome sequencing, ChIP, RNA-sequencing)<br>• Identifies domain-specific terminology and biological markers (off-target mutations, on-target efficiency, histone acetylation, DEGs)<br>• Includes quantitative measurements and numerical parameters (concentrations, time points, percentages, fold-changes)</td>
+                <td class="output"><pre>```json
+[
+  "CRISPR-Cas9 gene editing",
+  "primary human hepatocytes",
+  "dose-response protocol",
+  "0.5 to 50 μM concentrations",
+  "off-target mutation rate",
+  "whole-genome sequencing",
+  "72, 144, and 216 hours post-transfection",
+  "94.3% on-target editing efficiency",
+  "10 μM optimal dose",
+  "0.02% off-target effects",
+  "dose-dependent cytotoxicity",
+  "68% cell viability at 50 μM",
+  "chromatin immunoprecipitation (ChIP)",
+  "histone acetylation patterns",
+  "H3K27ac marks",
+  "RNA-sequencing",
+  "312 differentially expressed genes (DEGs)",
+  "log2 fold-change >1.5",
+  "adjusted p-value <0.05",
+  "hepatic metabolic pathways",
+  "apoptosis regulation"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the passage, with no extra commentary beyond the array itself. It successfully addresses all secondary criteria by capturing experimental techniques, domain-specific terminology, and quantitative parameters. However, the inclusion of specific numerical values within topic strings (e.g., '94.3% on-target editing efficiency' rather than 'on-target editing efficiency') represents a stylistic choice that slightly deviates from best practices for topic extraction, though it is not technically incorrect. The solution is comprehensive and well-structured, with only minor opportunities for refinement in topic abstraction.</td>
             </tr>
         
             </tbody>

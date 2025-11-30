@@ -1,50 +1,40 @@
 [
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "72 kg",
-      "goal": "Marathon training with a 20km long run scheduled for afternoon",
-      "restrictions": "None"
+      "content": "Recent studies demonstrate how behavioral economics intersects with digital platform design to influence consumer decision-making. Psychological research on cognitive biases reveals that users exhibit loss aversion when presented with algorithmic recommendations, leading to measurable changes in purchasing behavior. Simultaneously, technology firms leverage machine learning to predict these psychological patterns, creating feedback loops that amplify engagement metrics. Economic analysis shows that this data-driven personalization generates significant revenue streams while raising questions about market efficiency and consumer autonomy. The integration of neuroscientific findings about dopamine responses with UI/UX engineering has fundamentally altered how digital ecosystems shape financial transactions and information consumption patterns."
     },
     "solution_criteria": [
-      "Meal plan covers all three meals plus pre/post-workout nutrition",
-      "High carbohydrate content (55-65% of calories) appropriate for endurance training",
-      "Timing aligns meals and snacks around the afternoon long run (pre-run fuel, post-run recovery)",
-      "Plan is compact and presented in 1-day format without excessive detail"
+      "Extracts topics from multiple disciplines (economics, psychology, technology) without duplication",
+      "Identifies both primary topics and cross-domain concepts that bridge fields",
+      "Returns results as a JSON array of strings",
+      "Avoids conflating related but distinct topics (e.g., 'behavioral economics' vs 'cognitive biases' vs 'machine learning')"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with an endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around long training sessions"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+    "scenario": "Testing with an interdisciplinary passage mixing multiple fields (e.g., economics, psychology, and technology) to verify the prompt handles diverse topic categories and cross-domain concepts without duplication or confusion"
   },
   {
     "prompt_inputs": {
-      "height": "180",
-      "weight": "90",
-      "goal": "Build muscle mass and increase strength through weight training",
-      "restrictions": "None"
+      "content": "Hermeneutic phenomenology, as developed through the interpretive tradition, fundamentally reconceptualizes the relationship between subject and object by rejecting Cartesian dualism in favor of an ontological framework grounded in Being-in-the-world. Gadamer's fusion of horizons represents a methodological approach that acknowledges the historicity of understanding, wherein the interpreter's prejudgments and the text's meaning enter into a dialogical encounter. This theoretical stance diverges significantly from positivist epistemology, which privileges objective observation and quantifiable data, instead emphasizing the constitutive role of interpretation in generating knowledge. Furthermore, the hermeneutic circle\u2014the iterative movement between part and whole\u2014serves as both an analytical tool and a philosophical principle that challenges linear models of comprehension and demands reflexivity regarding the researcher's own situatedness within the interpretive process."
     },
     "solution_criteria": [
-      "Meal plan covers exactly 1 day with 4-5 meals",
-      "Distributes at least 150g protein evenly across meals (30g+ per meal)",
-      "Total daily calories support muscle building (approximately 3000-3500 kcal)",
-      "Includes calorie-dense, nutrient-rich foods suitable for strength athletes"
+      "Extracts key philosophical frameworks and theoretical concepts (e.g., hermeneutic phenomenology, Being-in-the-world, fusion of horizons, hermeneutic circle)",
+      "Identifies methodological approaches and epistemological positions (e.g., Cartesian dualism, positivist epistemology, reflexivity)",
+      "Returns output as a valid JSON array of strings with no duplicate entries",
+      "Captures abstract concepts and theoretical distinctions relevant to humanities scholarship"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) needing high protein distribution across meals and caloric density for muscle building"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+    "scenario": "Testing with a humanities passage containing abstract concepts and theoretical frameworks to verify the prompt extracts philosophical and methodological topics accurately"
   },
   {
     "prompt_inputs": {
-      "height": "178",
-      "weight": "75",
-      "goal": "Cut weight to 71kg for competition in 5 days while maintaining strength and power for boxing training",
-      "restrictions": "No dairy due to lactose intolerance"
+      "content": "We investigated the efficacy of CRISPR-Cas9 gene editing in primary human hepatocytes using a dose-response protocol with concentrations ranging from 0.5 to 50 \u03bcM. The off-target mutation rate was quantified through whole-genome sequencing at 72, 144, and 216 hours post-transfection. Results demonstrated a 94.3% on-target editing efficiency at 10 \u03bcM with minimal off-target effects (<0.02%). Notably, cell viability decreased to 68% at 50 \u03bcM, suggesting dose-dependent cytotoxicity. We employed chromatin immunoprecipitation (ChIP) to assess histone acetylation patterns and identified significant upregulation of H3K27ac marks associated with the target locus. Additionally, RNA-sequencing revealed 312 differentially expressed genes (DEGs) with log2 fold-change >1.5 and adjusted p-value <0.05, predominantly involved in hepatic metabolic pathways and apoptosis regulation."
     },
     "solution_criteria": [
-      "Meal plan totals approximately 2000-2200 calories to support gradual weight loss without performance degradation",
-      "Includes high-protein foods (minimum 150g daily) to preserve muscle mass during caloric deficit",
-      "All meals are dairy-free and suitable for an athlete in weight-restricted sport",
-      "Plan is formatted as a single day (breakfast, lunch, dinner, snacks) and is compact and concise"
+      "Captures all major experimental techniques and methodologies (CRISPR-Cas9, whole-genome sequencing, ChIP, RNA-sequencing)",
+      "Identifies domain-specific terminology and biological markers (off-target mutations, on-target efficiency, histone acetylation, DEGs)",
+      "Includes quantitative measurements and numerical parameters (concentrations, time points, percentages, fold-changes)"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a sport requiring weight management (boxer or wrestler) with caloric restrictions while maintaining performance and recovery nutrition"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+    "scenario": "Testing with a scientific abstract rich in domain-specific terminology and numerical data to ensure technical topics, measurements, and experimental variables are properly identified"
   }
 ]
